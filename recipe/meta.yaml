@@ -6,7 +6,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://github.com/N3PDF/evolutionary_keras/archive/v{{version}}.tar.gz
+  url: https://github.com/N3PDF/evolutionary_keras/archive/v{{ version }}.tar.gz
   sha256: 39dc8ff742cea271b67605c029fb0ae66bbfa1cc2dd5574ee372d0ed81234a83
 
 build:
