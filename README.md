@@ -5,7 +5,7 @@ Home: https://github.com/N3PDF/evolutionary_keras
 
 Package license: GPL-3.0
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: evolution_keras implements Genetic Algorithms for Keras
 

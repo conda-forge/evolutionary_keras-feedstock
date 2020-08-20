@@ -1,16 +1,15 @@
 {% set name = "evolutionary_keras" %}
-{% set version = "1.0.0" %}
+{% set version = "2.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://github.com/N3PDF/evolutionary_keras/archive/v{{ version }}.tar.gz
-  sha256: 39dc8ff742cea271b67605c029fb0ae66bbfa1cc2dd5574ee372d0ed81234a83
-
+  url: https://github.com/N3PDF/evolutionary_keras/archive/v.{{ version }}.tar.gz
+  sha256: 3f156dcf64448276a2745a39369f227166d75ed455218eb0e786be45f258065a
 build:
-  number: 1
+  number: 0
   script: "{{ PYTHON }} -m pip install . -vv"
   noarch: python
 
@@ -20,8 +19,9 @@ requirements:
     - pip
   run:
     - python >=3.6
-    - keras
+    - tensorflow >2.1
     - numpy
+    - cma
 
 test:
   imports:
