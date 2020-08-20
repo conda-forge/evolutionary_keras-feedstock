@@ -10,7 +10,7 @@ source:
   sha256: 3f156dcf64448276a2745a39369f227166d75ed455218eb0e786be45f258065a
 build:
   number: 0
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
   noarch: python
 
 requirements:
@@ -36,7 +36,7 @@ about:
   license: GPL-3.0
   license_family: GPL
   license_file: LICENSE
-  summary: "evolution_keras implements Genetic Algorithms for Keras"
+  summary: evolution_keras implements Genetic Algorithms for Keras
 
 extra:
   recipe-maintainers:
