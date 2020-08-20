@@ -9,7 +9,7 @@ source:
   url: https://github.com/N3PDF/evolutionary_keras/archive/v.{{ version }}.tar.gz
   sha256: 3f156dcf64448276a2745a39369f227166d75ed455218eb0e786be45f258065a
 build:
-  number: 1
+  number: 0
   script: "{{ PYTHON }} -m pip install . -vv"
   noarch: python
 
@@ -21,6 +21,7 @@ requirements:
     - python >=3.6
     - tensorflow >2.1
     - numpy
+    - cma
 
 test:
   imports:
