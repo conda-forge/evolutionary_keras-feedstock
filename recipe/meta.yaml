@@ -1,5 +1,5 @@
 {% set name = "evolutionary_keras" %}
-{% set version = "2.0" %}
+{% set version = "2.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://github.com/N3PDF/evolutionary_keras/archive/v.{{ version }}.tar.gz
-  sha256: 3f156dcf64448276a2745a39369f227166d75ed455218eb0e786be45f258065a
+  sha256: 9ef71cf220b2af0bac82b538bdadab5a77c65a4f71750d72bfbb8ae2d991c1cc
 build:
   number: 0
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
   noarch: python
 
 requirements:
@@ -36,7 +36,7 @@ about:
   license: GPL-3.0
   license_family: GPL
   license_file: LICENSE
-  summary: "evolution_keras implements Genetic Algorithms for Keras"
+  summary: evolution_keras implements Genetic Algorithms for Keras
 
 extra:
   recipe-maintainers:
